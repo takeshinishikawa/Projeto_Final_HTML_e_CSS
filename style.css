@@ -411,41 +411,46 @@ footer img {
 
 /* css da página cardápio */
 .main_coletanea {
-    width: 100%;
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px 0px 60px 0px;
+	width: 100%;
+	flex-direction: column;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 20px 0px 60px 0px;
 }
+
 .titulo_coletanea {
-    margin: 10px 0px 30px 0px;
-    font-family: cursive;
-    color: rgb(0, 6, 90);
-    font-size: 50px;
+	margin: 10px 0px 30px 0px;
+	font-family: cursive;
+	color: rgb(0, 6, 90);
+	font-size: 50px;
 }
+
 .gallery {
-    display: grid;
-    width: 70%;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10px;
+	display: grid;
+	width: 70%;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 10px;
 }
+
 .gallery__item {
-    cursor: pointer;
-    overflow: hidden;
-    border-radius: 4px;
+	cursor: pointer;
+	overflow: hidden;
+	border-radius: 4px;
 	border: #00FFAA solid 10px;
 
 }
+
 .gallery__item img {
-    width: 100%;
-    height: 100%;
-    object-fit: fill;
-    transition: 0.3s ease-in-out;
+	width: 100%;
+	height: 100%;
+	object-fit: fill;
+	transition: 0.3s ease-in-out;
 }
 .gallery__item img:hover {
-    transform: scale(1.1);
+	transform: scale(1.1);
 }
+
 @media screen and (min-width: 975px) {
 
 	.gallery__item2 {
@@ -546,9 +551,9 @@ footer img {
 }
 
 @media (max-width: 974px) {
-    .gallery {
-        grid-template-columns: repeat(2, 1fr);
-    }
+	.gallery {
+		grid-template-columns: repeat(2, 1fr);
+	}
 
 	.gallery__item1, .gallery__item5, .gallery__item9, .gallery__item13, .gallery__item17 {
 		border-color: red;
@@ -567,22 +572,22 @@ footer img {
 	}
 }
 @media (max-width: 550px) {
-    .gallery {
-        grid-template-columns: repeat(1, 1fr);
-    }
+	.gallery {
+		grid-template-columns: repeat(1, 1fr);
+	}
 }
 
 /*Image modal*/
 .modal {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.733);
-    animation: zoom 0.3s ease-in-out;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.733);
+	animation: zoom 0.3s ease-in-out;
 }
 
 .modal img {
@@ -591,54 +596,54 @@ footer img {
 	max-height: 90vh;
 }
 @keyframes zoom {
-    from {
-        transform: scale(0);
-    }
-    to {
-        transform: scale(1);
+	from {
+		transform: scale(0);
+	}
+	to {
+		transform: scale(1);
     }
 }
 
 .closeBtn {
-    color: rgba(255, 255, 255, 0.87);
-    font-size: 25px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin: 20px;
-    cursor: pointer;
-    transition: 0.2s ease-in-out;
+	color: rgba(255, 255, 255, 0.87);
+	font-size: 25px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 20px;
+	cursor: pointer;
+	transition: 0.2s ease-in-out;
 }
 .closeBtn:hover {
-    color: rgb(255, 255, 255);
+	color: rgb(255, 255, 255);
 }
 
 .nextBtn {
-    color: rgba(255, 255, 255, 0.87);
-    font-size: 25px;
-    position: absolute;
-    top: 50%;
-    right: 0;
-    margin: 20px;
-    cursor: pointer;
-    transition: 0.2s ease-in-out;
+	color: rgba(255, 255, 255, 0.87);
+	font-size: 25px;
+	position: absolute;
+	top: 50%;
+	right: 0;
+	margin: 20px;
+	cursor: pointer;
+	transition: 0.2s ease-in-out;
 }
 .nextBtn:hover {
-    color: rgb(255, 255, 255);
+	color: rgb(255, 255, 255);
 }
 
 .prevBtn {
-    color: rgba(255, 255, 255, 0.87);
-    font-size: 25px;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    margin: 20px;
-    cursor: pointer;
-    transition: 0.2s ease-in-out;
+	color: rgba(255, 255, 255, 0.87);
+	font-size: 25px;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	margin: 20px;
+	cursor: pointer;
+	transition: 0.2s ease-in-out;
 }
 .prevBtn:hover {
-    color: rgb(255, 255, 255);
+	color: rgb(255, 255, 255);
 }
 
 
@@ -657,35 +662,11 @@ footer img {
 	padding-top: 50px;
 }
 
-.produtos li:active {
-    border-color: #088C19;
-}
-
-.produtos li:hover h2 {
-    font-size: 34px;
-}
-
-.produtos h2 {
-    font-size: 30px;
-    font-weight: bold;
-}
-
-.produto-descricao {
-    font-size: 18px;
-}
-
-.produto-preco {
-    font-size: 22px;
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-
 /*css contato*/
 .main-contato {
-    display: flex;
+	display: flex;
 	flex-direction: column;
-    height: 100%;
+	height: 100%;
 }
 
 
@@ -702,16 +683,16 @@ form {
 }
 
 form label, form p{
-    display: block;
-    font-size: 20px;
-    margin: 0 0 10px;
+	display: block;
+	font-size: 20px;
+	margin: 0 0 10px;
 }
 
 .input-padrao {
-    display: block;
-    margin: 0 0 20px;
-    padding: 10px 25px;
-    width: 50%;
+	display: block;
+	margin: 0 0 20px;
+	padding: 10px 25px;
+	width: 50%;
 }
 
 fieldset {
@@ -751,39 +732,39 @@ fieldset label {
 
 table {
 	display: block;
-    margin: 20px 0 40px;
+	margin: 20px 0 40px;
 	padding: 0 100px;
 }
 
 thead {
-    background: #555555;
-    color: white;
-    font-weight: bold;
+	background: #555555;
+	color: white;
+	font-weight: bold;
 }
 
 td, th {
-    border: 1px solid #000000;
-    padding: 8px 15px;
+	border: 1px solid #000000;
+	padding: 8px 15px;
 }
 
 
 @media screen and (max-width: 480px) {
-    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
-        width: auto;
+	.caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+		width: auto;
 		padding: 20px;
-    }
+	}
 
-    h1, .caixa {
-        text-align: center;
-    }
+	h1, .caixa {
+		text-align: center;
+	}
 
-    nav {
-        position: static;
-    }
+	nav {
+		position: static;
+	}
 
-    .lista-beneficios, .imagem-beneficios {
+	.lista-beneficios, .imagem-beneficios {
 		width: 100%;
-    }
+	}
 
 	.produtos {
 		display: block;
